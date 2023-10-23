@@ -1,0 +1,17 @@
+{
+  "name": "landing-page",
+  "version": "1.0.0",
+  "description": "tech.t",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:scss": "node-sass src/scss/main.scss public/css/main.css",
+    "watch:scss": "node-sass --watch src/scss/main.scss public/css/main.css"
+  },
+  "keywords": [],
+  "author": "Linas Kri",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
