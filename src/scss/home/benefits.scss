@@ -1,0 +1,41 @@
+.benefits {
+  padding: 2.5rem 0;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    margin: 0 1rem;
+  }
+
+  &__card {
+    background-color: #f9e8e7;
+    width: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-radius: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  &__icon {
+    width: 6rem;
+    height: 48px;
+    margin-right: 0.5rem;
+  }
+
+  .benefits__card:hover .benefits__icon path {
+    fill: #c2110e;
+  }
+
+  .benefits__card .benefits__icon svg {
+    width: 5rem;
+    height: 48px;
+  }
+}

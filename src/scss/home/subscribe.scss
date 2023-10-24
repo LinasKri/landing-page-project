@@ -1,0 +1,37 @@
+.subscribe {
+  background-color: black;
+  color: white;
+  padding: 2.5rem 0;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__card {
+    width: 8rem;
+    margin: 0 2rem;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__image {
+    width: 1.5rem;
+    height: auto;
+  }
+}

@@ -1,4 +1,13 @@
+@import './partials/navbar.scss';
 @import './home/header.scss';
+@import './home/benefits.scss';
+@import './home/subscribe.scss';
+@import './home/performance.scss';
+@import './home/usda.scss';
+@import './home/product.scss';
+@import './home/process.scss';
+@import './home/faqs.scss';
+
 body,
 body * {
   margin: 0;

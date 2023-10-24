@@ -15,42 +15,376 @@
     />
   </head>
   <body>
-    <nav class="navbar">
+    <nav class="navbar navbar--light">
+      <div
+        class="navbar__content navbar__content--collapsed"
+        id="navbarContent"
+      >
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a class="navbar__link navbar__link--active" href="#">shop</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#">mission</a>
+          </li>
+        </ul>
+      </div>
       <div class="navbar__container">
-        <button class="navbar__toggler">
+        <button class="navbar__toggler" id="navbarToggler">
           <span class="navbar__toggler-icon"></span>
         </button>
-        <div class="navbar__menu">
-          <ul class="navbar__list">
-            <li class="navbar__item">
-              <a class="navbar__link" href="#">shop</a>
-            </li>
-            <li class="navbar__item">
-              <a class="navbar__link" href="#">mission</a>
-            </li>
-          </ul>
-        </div>
         <a class="navbar__logo" href="#">Logo</a>
       </div>
     </nav>
+
     <main>
       <section class="header">
         <h1 class="header__title">new year, new "you" with [product name]</h1>
         <button class="header__btn">try [product name]</button>
       </section>
-      <section class="benefits">
-        <div class="benefits__container">
-          <div class="benefits__card">
-            <p>Improves sleep</p>
+      <section id="benefits" class="benefits">
+        <div class="benefits__content">
+          <div class="benefits__item">
+            <div class="benefits__card">
+              <div
+                class="benefits__icon svg-container"
+                data-svg-src="./public/assets/icons/benefits/sleep-icon.svg"
+              ></div>
+              <p>Improves sleep</p>
+            </div>
           </div>
-          <div class="benefits__card">
-            <p>Boosts immune system</p>
+          <div class="benefits__item">
+            <div class="benefits__card">
+              <div
+                class="benefits__icon svg-container"
+                data-svg-src="./public/assets/icons/benefits/imune-system.svg"
+              ></div>
+              <p>Boosts&nbsp;immune system</p>
+            </div>
           </div>
-          <div class="benefits__card">
-            <p>Enhances strength</p>
+          <div class="benefits__item">
+            <div class="benefits__card">
+              <div
+                class="benefits__icon svg-container"
+                data-svg-src="./public/assets/icons/benefits/strenth.svg"
+              ></div>
+              <p>Enhances strength</p>
+            </div>
           </div>
-          <div class="benefits__card">
-            <p>Improves digestion</p>
+          <div class="benefits__item">
+            <div class="benefits__card">
+              <div
+                class="benefits__icon svg-container"
+                data-svg-src="./public/assets/icons/benefits/digestion.svg"
+              ></div>
+              <p>Improves digestion</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="subscribe">
+        <div class="subscribe__container">
+          <h3 class="subscribe__title">subscribe & save</h3>
+          <div class="subscribe__content">
+            <div class="subscribe__card">
+              <img
+                class="subscribe__image"
+                src="./public/assets/icons/cycle-icon.svg"
+                alt="delivery every 30 days"
+              />
+              <p>delivery every 30 days</p>
+            </div>
+            <div class="subscribe__card">
+              <img
+                class="subscribe__image"
+                src="./public/assets/icons/persent-icon.svg"
+                alt="best value per box"
+              />
+              <p>best value per box</p>
+            </div>
+            <div class="subscribe__card">
+              <img
+                class="subscribe__image"
+                src="./public/assets/icons/x-icon.svg"
+                alt="no commitment, cancel anytime"
+              />
+              <p>no commitment, cancel anytime</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="performance" class="performance">
+        <h3 class="performance__title">
+          Performance nutrition and healthy transformation made simple:
+        </h3>
+
+        <div class="performance__content">
+          <div class="performance__item">
+            <div
+              class="performance__icon svg-container"
+              data-svg-src="./public/assets/icons/performance/runner.svg"
+            ></div>
+            <p class="performance__text">
+              Enhance <b>endurance</b>, <b>performance</b>, and exercise
+              recovery
+            </p>
+          </div>
+
+          <div class="performance__item">
+            <div
+              class="performance__icon svg-container"
+              data-svg-src="./public/assets/icons/performance/bolt-solid.svg"
+            ></div>
+            <p class="performance__text">
+              Enjoy jitter-free <b>energy</b> to tackle your busy schedule
+            </p>
+          </div>
+
+          <div class="performance__item">
+            <div
+              class="performance__icon svg-container"
+              data-svg-src="./public/assets/icons/performance/shield-virus-solid.svg"
+            ></div>
+            <p class="performance__text">
+              Strengthen your <b>immune health</b> to stay on your game
+            </p>
+          </div>
+
+          <div class="performance__item">
+            <div
+              class="performance__icon svg-container"
+              data-svg-src="./public/assets/icons/performance/like.svg"
+            ></div>
+            <p class="performance__text">
+              <b>Tastes amazing!</b> No bitterness, gritty, or clumpy texture
+            </p>
+          </div>
+
+          <div class="performance__item">
+            <div
+              class="performance__icon svg-container"
+              data-svg-src="./public/assets/icons/performance/check-check.svg"
+            ></div>
+            <p class="performance__text">
+              <b>30 sec habit</b>. Mixes in any beverage fast and easy
+            </p>
+          </div>
+
+          <div class="performance__item">
+            <div
+              class="performance__icon svg-container"
+              data-svg-src="./public/assets/icons/performance/fire-solid.svg"
+            ></div>
+            <p class="performance__text">
+              Recharged <b>metabolism</b> to stay in peak shape
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="usda" class="usda">
+        <img
+          src="./public/assets/icons/usda-organic.png"
+          class="usda__img"
+          alt="USDA"
+        />
+        <p class="usda__text">
+          only exceptional USDA certified organic sustainable sourced
+          ingredients qualify.
+        </p>
+      </section>
+      <section class="product">
+        <h1 class="product__title">
+          [product name]
+          <span class="product__title-sub">blend</span>
+        </h1>
+
+        <div class="product__slider swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide product__slide">
+              <div class="product__slide-content">
+                <h4 class="product__slide-heading">Metabolism Boosting</h4>
+                <p class="product__slide-description">
+                  These powerful superfoods ignite your metabolism and reduce
+                  bloating. They improve digestion and deliver the energy you
+                  need to get things done. <br /><br />Main Organic Ingredients:
+                </p>
+              </div>
+              <img
+                class="product__slide-image"
+                src="./public/assets/images/ingredients.png"
+                alt="Organic Ingredients"
+              />
+            </div>
+            <div class="swiper-slide product__slide">
+              <div class="product__slide-content">
+                <h4 class="product__slide-heading">Metabolism Boosting</h4>
+                <p class="product__slide-description">
+                  These powerful superfoods ignite your metabolism and reduce
+                  bloating. They improve digestion and deliver the energy you
+                  need to get things done. <br /><br />Main Organic Ingredients:
+                </p>
+              </div>
+              <img
+                class="product__slide-image"
+                src="./public/assets/images/ingredients.png"
+                alt="Organic Ingredients"
+              />
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+      <section class="process">
+        <h2 class="process__title">Meticulous Methodical Process</h2>
+        <div class="process__content">
+          <img
+            class="process__image"
+            src="./public/assets/images/progress.svg"
+            alt="Process Illustration"
+          />
+        </div>
+      </section>
+      <section class="faqs">
+        <h4 class="faqs__title">FAQs</h4>
+        <div class="faqs__container">
+          <div class="faqs__accordion" id="faqs-accordion">
+            <div class="faqs__item">
+              <h2 class="faqs__header" id="headingOne">
+                <button
+                  class="faqs__button"
+                  type="button"
+                  data-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                  data-toggle="accordion"
+                >
+                  What are the Effective ingredients in [product name]?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="faqs__collapse"
+                aria-labelledby="headingOne"
+              >
+                <div class="faqs__body">
+                  <p>Pellentesque vitae convallis quam, in ultricies leo:</p>
+                  <br />
+                  <p><b>Lorem ipsum dolor sit ame:</b></p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc ornare tempor quam. Morbi pharetra vehicula ornare.
+                    Proin gravida turpis orci, sit amet sollicitudin mi rutrum
+                    nec.
+                  </p>
+
+                  <p><b>Curabitur gravida ullamcorper dui:</b></p>
+                  Pellentesque - tincidunt efficitur suscipit. Aliquam commodo
+                  id est eu cursus. Mauris ut elit quis nunc eleifend egestas in
+                  ac lorem. <br />
+                  <p>
+                    Pellentesque - vitae convallis quam, in ultricies leo.
+                    Curabitur gravida ullamcorper dui. Aliquam velit arcu,
+                    ultrices nec mauris a, vehicula fermentum nisi. bibendum.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faqs__item">
+              <h2 class="faqs__header" id="headingTwo">
+                <button
+                  class="faqs__button"
+                  type="button"
+                  data-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                  data-toggle="accordion"
+                >
+                  Other Question?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="faqs__collapse"
+                aria-labelledby="headingTwo"
+              >
+                <div class="faqs__body">
+                  <p>Pellentesque vitae convallis quam, in ultricies leo:</p>
+                  <br />
+                  <p><b>Lorem ipsum dolor sit ame:</b></p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc ornare tempor quam. Morbi pharetra vehicula ornare.
+                    Proin gravida turpis orci, sit amet sollicitudin mi rutrum
+                    nec.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faqs__item">
+              <h2 class="faqs__header" id="headingThree">
+                <button
+                  class="faqs__button"
+                  type="button"
+                  data-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                  data-toggle="accordion"
+                >
+                  Other Question?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="faqs__collapse"
+                aria-labelledby="headingThree"
+              >
+                <div class="faqs__body">
+                  <p>Pellentesque vitae convallis quam, in ultricies leo:</p>
+                  <br />
+                  <p><b>Lorem ipsum dolor sit ame:</b></p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc ornare tempor quam. Morbi pharetra vehicula ornare.
+                    Proin gravida turpis orci, sit amet sollicitudin mi rutrum
+                    nec.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faqs__item">
+              <h2 class="faqs__header" id="headingFour">
+                <button
+                  class="faqs__button"
+                  type="button"
+                  data-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                  data-toggle="accordion"
+                >
+                  Other Question?
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="faqs__collapse"
+                aria-labelledby="headingFour"
+              >
+                <div class="faqs__body">
+                  <p>Pellentesque vitae convallis quam, in ultricies leo:</p>
+                  <br />
+                  <p><b>Lorem ipsum dolor sit ame:</b></p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc ornare tempor quam. Morbi pharetra vehicula ornare.
+                    Proin gravida turpis orci, sit amet sollicitudin mi rutrum
+                    nec.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
