@@ -1,0 +1,44 @@
+.header {
+  height: 75vh;
+  padding: 2.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  text-align: center;
+  background: url('../../../public/assets/images/main-img.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__title {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 37px;
+    width: 27rem;
+  }
+
+  &__btn {
+    padding: 0.5rem 2.5rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: #c2110e;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken(#c2110e, 10%);
+    }
+
+    &:active {
+      background-color: darken(#c2110e, 20%);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

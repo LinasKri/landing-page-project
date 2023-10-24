@@ -1,0 +1,40 @@
+.header {
+  height: 75vh;
+  padding: 2.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  text-align: center;
+  background: url("../../../public/assets/images/main-img.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .header__title {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 37px;
+    width: 27rem; }
+  .header__btn {
+    padding: 0.5rem 2.5rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: #c2110e;
+    color: white;
+    cursor: pointer; }
+    .header__btn:hover {
+      background-color: #920d0b; }
+    .header__btn:active {
+      background-color: #630907; }
+    .header__btn:focus {
+      outline: none; }
+
+body,
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif; }
