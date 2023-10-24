@@ -1,0 +1,40 @@
+.performance {
+  &__title {
+    margin-bottom: 2.5rem;
+    text-align: center;
+    padding: 2.5rem 0 0 0;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    flex: 1 0 calc(33.333% - 1rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  &__icon {
+    width: 6rem;
+    height: 48px;
+  }
+
+  &__text {
+    max-width: 11rem;
+  }
+
+  .performance__item:hover .performance__icon path {
+    fill: #c2110e;
+  }
+
+  .performance__item .performance__icon svg {
+    width: 7rem;
+    height: 48px;
+  }
+}

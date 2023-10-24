@@ -1,0 +1,336 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: relative; }
+
+.navbar--light {
+  background-color: #f5f5f5; }
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; }
+
+.navbar__toggler {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: none; }
+
+.navbar__toggler-icon {
+  display: inline-block;
+  width: 30px;
+  height: 3px;
+  background-color: black; }
+
+.navbar__content {
+  display: flex; }
+
+.navbar__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.navbar__item {
+  margin-right: 1rem; }
+
+.navbar__link {
+  text-decoration: none;
+  color: #000;
+  padding: 0.5rem 1rem; }
+
+.navbar__logo {
+  text-decoration: none;
+  color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 700;
+  font-size: 1.5rem; }
+
+@media (max-width: 576px) {
+  .navbar__toggler {
+    display: block; }
+  .navbar__content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    z-index: 999; }
+  .navbar__list {
+    flex-direction: column; }
+  .navbar__item {
+    margin-right: 0;
+    margin-bottom: 1rem; }
+  .navbar__content--expanded {
+    max-height: 500px;
+    justify-content: center; } }
+
+.header {
+  height: 75vh;
+  padding: 2.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  text-align: center;
+  background: url("../../../public/assets/images/main-img.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .header__title {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 37px;
+    width: 27rem; }
+  .header__btn {
+    padding: 0.5rem 2.5rem;
+    border: none;
+    border-radius: 9px;
+    background-color: #c2110e;
+    color: white;
+    cursor: pointer; }
+    .header__btn:hover {
+      background-color: #920d0b; }
+    .header__btn:active {
+      background-color: #630907; }
+    .header__btn:focus {
+      outline: none; }
+
+.benefits {
+  padding: 2.5rem 0; }
+  .benefits__content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+  .benefits__item {
+    display: flex;
+    justify-content: center;
+    margin: 0 1rem; }
+  .benefits__card {
+    background-color: #f9e8e7;
+    width: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-radius: 1.5rem;
+    margin: 1rem 0; }
+  .benefits__icon {
+    width: 6rem;
+    height: 48px;
+    margin-right: 0.5rem; }
+  .benefits .benefits__card:hover .benefits__icon path {
+    fill: #c2110e; }
+  .benefits .benefits__card .benefits__icon svg {
+    width: 5rem;
+    height: 48px; }
+
+.subscribe {
+  background-color: black;
+  color: white;
+  padding: 2.5rem 0; }
+  .subscribe__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+  .subscribe__title {
+    margin-bottom: 2rem; }
+  .subscribe__content {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .subscribe__card {
+    width: 8rem;
+    margin: 0 2rem;
+    transition: all 0.2s ease-in-out; }
+    .subscribe__card:hover {
+      transform: scale(1.2); }
+  .subscribe__image {
+    width: 1.5rem;
+    height: auto; }
+
+.performance__title {
+  margin-bottom: 2.5rem;
+  text-align: center;
+  padding: 2.5rem 0 0 0; }
+
+.performance__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; }
+
+.performance__item {
+  flex: 1 0 calc(33.333% - 1rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem; }
+
+.performance__icon {
+  width: 6rem;
+  height: 48px; }
+
+.performance__text {
+  max-width: 11rem; }
+
+.performance .performance__item:hover .performance__icon path {
+  fill: #c2110e; }
+
+.performance .performance__item .performance__icon svg {
+  width: 7rem;
+  height: 48px; }
+
+.usda {
+  background-color: #f5f5f5;
+  height: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 0; }
+  .usda__img {
+    width: 7rem;
+    height: 6.4rem;
+    margin-right: 0.5rem; }
+  .usda__text {
+    width: 24rem; }
+
+.product {
+  text-align: center;
+  padding: 2.5rem 0;
+  background-color: #f9e8e7; }
+  .product__title {
+    color: #d9534f;
+    font-weight: bold; }
+    .product__title-sub {
+      color: #000; }
+  .product__slider {
+    width: 600px;
+    height: 300px; }
+  .product__slide {
+    display: flex !important;
+    justify-content: center;
+    align-items: center; }
+    .product__slide-content {
+      text-align: start; }
+    .product__slide-heading {
+      font-weight: bold; }
+    .product__slide-image {
+      width: 13rem; }
+  .product .swiper-pagination-bullet {
+    border: 1px black solid;
+    opacity: 1;
+    background: none; }
+  .product .swiper-pagination-bullet-active {
+    background: #000; }
+  .product .swiper-button-next:after,
+  .product .swiper-button-prev:after {
+    font-size: 1.1rem;
+    color: #000; }
+  .product .swiper-button-prev,
+  .product .swiper-button-next {
+    top: 100%;
+    height: 1rem;
+    width: 66%; }
+
+.process {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 0; }
+  .process__content {
+    display: flex;
+    justify-content: center;
+    max-width: 58.625rem;
+    width: 100%;
+    height: 35rem;
+    background-image: url("../../../public/assets/images/progress.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .process__title {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-weight: bold; }
+  @media (max-width: 769px) {
+    .process__content {
+      background-image: url("../../../public/assets/images/progress-tablet.svg"); } }
+  @media (max-width: 576px) {
+    .process__content {
+      background-image: url("../../../public/assets/images/progress-mobile.svg");
+      height: 53rem; } }
+
+.faqs {
+  background-color: #f5f5f5;
+  padding: 2.5rem 0; }
+
+.faqs__title {
+  font-weight: bold;
+  text-align: center;
+  width: 100%; }
+
+.faqs__container {
+  display: flex;
+  justify-content: center; }
+
+.faqs__accordion {
+  width: 75%;
+  max-width: 50rem; }
+
+.faqs__button {
+  background-color: #f5f5f5;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  border: unset;
+  padding: 0.7rem;
+  width: 100%;
+  text-align: left; }
+
+.faqs__body {
+  padding: 0.7rem; }
+
+.faqs__button::after {
+  content: '';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  width: 10px;
+  height: 2px;
+  background-color: currentColor;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease-in-out; }
+
+.faqs__button.active::after {
+  transform: translateY(-50%) rotate(90deg); }
+
+.faqs__collapse {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out; }
+
+.faqs__collapse.active {
+  max-height: 500px; }
+
+body,
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif; }
