@@ -45,16 +45,18 @@
     }
 
     &__card {
-      width: 14rem;
+      width: 9rem;
       flex-direction: column;
       text-align: center;
-      width: 9rem;
     }
   }
 
   @media (max-width: 576px) {
     &__item {
       margin: 0.2rem 1.2rem;
+    }
+    &__card {
+      width: 8rem;
     }
   }
 }
