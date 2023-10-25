@@ -1,4 +1,9 @@
 .performance {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   &__title {
     margin-bottom: 2.5rem;
     text-align: center;
@@ -8,16 +13,17 @@
   &__content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    max-width: 919px;
   }
 
   &__item {
-    flex: 1 0 calc(33.333% - 1rem);
+    width: 18rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
+    margin: 0 0.5rem 2rem 0.5rem;
   }
 
   &__icon {
@@ -36,5 +42,25 @@
   .performance__item .performance__icon svg {
     width: 7rem;
     height: 48px;
+  }
+
+  @media (max-width: 769px) {
+    &__title {
+      width: 28rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    &__title {
+      width: 19rem;
+    }
+    &__item {
+      width: 100%;
+    }
+
+    &__text {
+      width: 100%;
+      max-width: unset;
+    }
   }
 }
