@@ -15,6 +15,30 @@
   &__slider {
     width: 600px;
     height: 300px;
+
+    .swiper-pagination-bullet {
+      border: 1px black solid;
+      opacity: 1;
+      background: none;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: #000;
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+      font-size: 1.1rem;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      top: 100%;
+      height: 1rem;
+      width: 66%;
+    }
   }
 
   &__slide {
@@ -24,10 +48,11 @@
 
     &-content {
       text-align: start;
-    }
 
-    &-heading {
-      font-weight: bold;
+      &-heading {
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
     }
 
     &-image {
@@ -35,25 +60,78 @@
     }
   }
 
-  .swiper-pagination-bullet {
-    border: 1px black solid;
-    opacity: 1;
-    background: none;
-  }
-  .swiper-pagination-bullet-active {
-    background: #000;
+  &__btn {
+    padding: 0.5rem 2.5rem;
+    margin-top: 1.5rem;
+    border: none;
+    border-radius: 9px;
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken(#000, 10%);
+    }
+
+    &:focus {
+      outline: none;
+    }
   }
 
-  .swiper-button-next:after,
-  .swiper-button-prev:after {
-    font-size: 1.1rem;
-    color: #000;
+  @media (max-width: 768px) {
+    &__title {
+      margin-bottom: 1rem;
+      font-size: 43px;
+    }
+
+    &__slider {
+      height: 32rem;
+      width: 524px;
+      margin: 0 auto;
+
+      .product {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100vh;
+      }
+    }
+
+    &__slide {
+      flex-direction: column !important;
+      align-items: start;
+      height: auto;
+
+      &-content {
+        text-align: center;
+        margin-bottom: 4rem;
+      }
+
+      &-image {
+        width: 16rem;
+        margin: 0 auto;
+      }
+    }
+
+    &__btn {
+      margin-top: 4rem;
+      padding: 0.8rem 0;
+      width: 60%;
+      font-size: 15px;
+    }
   }
 
-  .swiper-button-prev,
-  .swiper-button-next {
-    top: 100%;
-    height: 1rem;
-    width: 66%;
+  @media (max-width: 576px) {
+    &__title {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+    }
+
+    &__slider {
+      height: auto;
+      width: 355px;
+      margin: 0 auto;
+    }
   }
 }

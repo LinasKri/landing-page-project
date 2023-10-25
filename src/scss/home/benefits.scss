@@ -38,4 +38,25 @@
     width: 5rem;
     height: 48px;
   }
+
+  @media (max-width: 769px) {
+    &__item {
+      margin: auto;
+    }
+
+    &__card {
+      width: 9rem;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 576px) {
+    &__item {
+      margin: 0.2rem 1.2rem;
+    }
+    &__card {
+      width: 8rem;
+    }
+  }
 }

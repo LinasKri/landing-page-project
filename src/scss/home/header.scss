@@ -41,4 +41,30 @@
       outline: none;
     }
   }
+
+  @media (max-width: 769px) {
+    max-height: 1024px;
+    background: url('../../../public/assets/images/main-img-tablet.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__btn {
+      width: 60%;
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    max-height: 699px;
+
+    &__title {
+      width: 16rem;
+    }
+
+    &__btn {
+      margin: 0 1rem;
+      width: 100%;
+    }
+  }
 }

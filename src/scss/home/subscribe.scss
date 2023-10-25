@@ -2,6 +2,7 @@
   background-color: black;
   color: white;
   padding: 2.5rem 0;
+  position: relative;
 
   &__container {
     display: flex;
@@ -23,15 +24,55 @@
   &__card {
     width: 8rem;
     margin: 0 2rem;
-    transition: all 0.2s ease-in-out;
 
     &:hover {
       transform: scale(1.2);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    &__image,
+    &__text {
+      display: inline-block;
     }
   }
 
   &__image {
     width: 1.5rem;
     height: auto;
+    margin-right: 1rem;
+  }
+
+  @media (max-width: 576px) {
+    padding: 2.5rem 1.2rem;
+
+    &__container {
+      align-items: start;
+    }
+
+    &__content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__card {
+      margin: 1rem 0;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+    }
+
+    &__title {
+      position: absolute;
+      top: 50%;
+      right: -2.6rem;
+      transform: translateY(-50%) rotate(-90deg);
+      margin-bottom: 0;
+    }
+
+    &__image,
+    &__text {
+      margin-right: 0.5rem;
+    }
   }
 }
